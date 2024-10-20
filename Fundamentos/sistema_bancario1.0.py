@@ -1,5 +1,5 @@
 class User:
-    users = {}  # Dicionário para armazenar usuários pelo CPF
+    users = {} 
 
     def __init__(self, cpf, nome, data_nascimento, endereco):
         if cpf in User.users:
@@ -25,7 +25,7 @@ class User:
 
 
 class BankAccount:
-    accounts_by_cpf = {}  # Dicionário para armazenar contas pelo CPF
+    accounts_by_cpf = {}  
 
     def __init__(self, user, agencia, numero_conta, initial_balance=0):
         if user.cpf in BankAccount.accounts_by_cpf:
